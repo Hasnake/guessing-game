@@ -1,0 +1,17 @@
+h1{
+        text-align: center;
+        background-color: purple;
+        padding: 10px;
+        font-size: 12;
+        display:block;
+        border-style: solid;
+        border-width: 3px;
+        font-family:monospace;
+        font-style: oblique;
+    }
+    p
+        {
+          text-align: center;
+          font-family:monospace;
+          font-style:italic;
+        }
