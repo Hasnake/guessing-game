@@ -48,16 +48,13 @@ var userName = prompt('What\'s your name?');
        console.log('Don\'t  ask such question ');
      }
      var temprature=prompt('what is the temprature outside in degree Fahraniet');
-     var Season=prompt('What is the season? Is that winter,Fall,spring,summer')
-     var questionFive = prompt('Do you want to wear a jacket');
-     questionFive = questionFive.toLowerCase();
+     var Season=prompt('What is the season? Is that winter,Fall,spring,summer');
 
-     if (questionFive === 'yes'  || questionFive === 'y')
-     {
-       console.log(temprature <=60||season='winter');
-
+      if (temprature <60||season='winter')
+       {
+         console.log('wear a jacket');
      }
-     else if (questionFive === 'no'  || questionFive === 'n')
+     else if (temprature>=60||season!='winter')
      {
-       console.log(temprature>=60||season!='winter');
+       console.log('you can take off your jacket');
      }
