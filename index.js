@@ -5,13 +5,18 @@ var userName = prompt('What\'s your name?');
    var questionOne = prompt('Was I born in Washington?');
    questionOne = questionOne.toLowerCase();
 
-   if (questionOne === 'no'  || questionOne === 'n') {
-     console.log('Correct, I was born in Ethiopia!')
-   } else if (questionOne === 'yes'  || questionOne === 'y') {
-     console.log('Not true, I was born in Ethiopia!')
-   } else {
+   if (questionOne === 'no'  || questionOne === 'n')
+   {
+     console.log('Correct, I was born in Ethiopia!');
+   }
+   else if (questionOne === 'yes'  || questionOne === 'y')
+   {
+     console.log('Not true, I was born in Ethiopia!');
+   }
+   else {
 
-   } var questionTwo = prompt('Do you want to know me better');
+   }
+   var questionTwo = prompt('Do you want to know me better');
    questionTwo = questionTwo.toLowerCase();
 
      if (questionTwo === 'yes'  || questionTwo === 'y') {
@@ -22,17 +27,37 @@ var userName = prompt('What\'s your name?');
      var questionThree = prompt('Do you like my photo?');
      questionThree = questionThree.toLowerCase();
 
-       if (questionThree === 'yes'  || questionThree === 'y'){
+       if (questionThree === 'yes'  || questionThree === 'y')
+       {
        console.log('Thank you very much.Yo are so awesome too!');
-     } else if (questionThree === 'no'  || questionThree === 'n'){
+     }
+     else if (questionThree === 'no'  || questionThree === 'n')
+     {
        console.log('oh boy better to like that!.');
      }
      var questionFour = prompt('Do you want to perform some music?');
      questionFour = questionFour.toLowerCase();
 
-     if (questionFour === 'yes'  || questionFour === 'y') {
+     if (questionFour === 'yes'  || questionFour === 'y')
+     {
        console.log('come visit me.');
 
-     } else if (questionFour === 'no'  || questionFour === 'n'){
+     }
+     else if (questionFour === 'no'  || questionFour === 'n')
+     {
        console.log('Don\'t  ask such question ');
+     }
+     var temprature=prompt('what is the temprature outside in degree Fahraniet');
+     var Season=prompt('What is the season? Is that winter,Fall,spring,summer')
+     var questionFive = prompt('Do you want to wear a jacket');
+     questionFive = questionFive.toLowerCase();
+
+     if (questionFive === 'yes'  || questionFive === 'y')
+     {
+       console.log(temprature <=60||season='winter');
+
+     }
+     else if (questionFive === 'no'  || questionFive === 'n')
+     {
+       console.log(temprature>=60||season!='winter');
      }
