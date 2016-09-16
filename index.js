@@ -10,15 +10,21 @@
    }
    else if (questionOne === 'yes'  || questionOne === 'y')
    {
-     alert('Not true, I was born in Ethiopia!');
+     alert('Guess what, I was born in Ethiopia!');
+   }
+   else {
+     alert('incorrect input');
    }
     var questionTwo = prompt('Do you want to know me better');
    questionTwo = questionTwo.toLowerCase();
 
      if (questionTwo === 'yes'  || questionTwo === 'y') {
-       alert('Great, please read on ' + userName);
+       alert('Great, please go through my profile.' + userName+"!");
      } else if (questionTwo === 'no'  || questionTwo === 'n'){
-       alert('it is shown there keep on reading')
+       alert('No worries and I wish if you know me better.');
+     }
+     else {
+       alert('incorrect input');
      }
      var questionThree = prompt('Do you like my photo?');
      questionThree = questionThree.toLowerCase();
@@ -31,6 +37,9 @@
      {
        alert('oh boy better to like that!.');
      }
+     else {
+       alert('incorrect input');
+     }
      var questionFour = prompt('Do you want to perform some music?');
      questionFour = questionFour.toLowerCase();
 
@@ -42,6 +51,9 @@
      else if (questionFour === 'no'  || questionFour === 'n')
      {
        alert('Don\'t  ask such question ');
+     }
+     else {
+       alert('incorrect input');
      }
      var temprature=prompt('what is the temprature outside in degree Fahraniet');
      var season=prompt('What is the season? Is that winter,Fall,spring,summer');
