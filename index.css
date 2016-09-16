@@ -15,3 +15,15 @@ h1{
           font-family:monospace;
           font-style:italic;
         }
+img
+{
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 50%;
+  background-color: blue;
+}
+body
+{
+  background-color:grey;
+}
