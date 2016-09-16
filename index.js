@@ -55,19 +55,12 @@ if (temprature <=60 && season==='winter')
      }
      var color=prompt('guess the fundamental color ');
      var funColor=['red','green','blue'];
-     if (color===funColor[0])
-     {
-       alert('you got a correct answer and the index is 0');
-     }
-     else if (color===funColor[1])
-     {
-        alert('you got a correct answer and the index is 1');
-     }
-      else if (color===funColor[2])
-      {
-         alert('you got a correct answer and the index is 2');
-      }
-      else
+     if (funColor.indexOf(color)===-1)
      {
        alert('you got a wrong answer');
      }
+     else
+     {
+        alert('you got a correct answer and the index is'+" "+funColor.indexOf(color));
+      }
+    
