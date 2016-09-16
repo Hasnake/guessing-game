@@ -53,14 +53,13 @@ if (temprature <=60 && season==='winter')
      {
        alert('you can take off your jacket');
      }
-     var color=prompt('guess the fundamental color ');
+     var questionSix=prompt('guess the fundamental color ');
      var funColor=['red','green','blue'];
-     if (funColor.indexOf(color)===-1)
+     if (funColor.indexOf(questionSix)===-1)
      {
        alert('you got a wrong answer');
      }
      else
      {
-        alert('you got a correct answer and the index is'+" "+funColor.indexOf(color));
+        alert('you got a correct answer and the index is'+" "+funColor.indexOf(questionSix));
       }
-    
