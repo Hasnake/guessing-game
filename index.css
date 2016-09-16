@@ -2,11 +2,11 @@ h1{
         text-align: center;
         background-color: purple;
         padding: 10px;
-        font-size: 12;
+        font-size: 20;
         display:block;
         border-style: solid;
         border-width: 3px;
-        font-family:monospace;
+        font-family:fantasy;
         font-style: oblique;
     }
     p
@@ -14,6 +14,7 @@ h1{
           text-align: center;
           font-family:monospace;
           font-style:italic;
+          font-size: 16px;
         }
 img
 {
@@ -26,4 +27,9 @@ img
 body
 {
   background-color:grey;
+
+}
+li
+{
+  font-family:serif;
 }
