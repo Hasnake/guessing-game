@@ -53,11 +53,21 @@ if (temprature <=60 && season==='winter')
      {
        alert('you can take off your jacket');
      }
-     var color=prompt('what are the fundamental colors');
-     var Color=[red,green,blue];
-     if (indexof(color===-1)
-alert('you better try another color');
+     var color=prompt('guess the fundamental color ');
+     var funColor=['red','green','blue'];
+     if (color===funColor[0])
+     {
+       alert('you got a correct answer and the index is 0');
      }
-     else {
-       alert('you got a correct answer' + indexof(color));
+     else if (color===funColor[1])
+     {
+        alert('you got a correct answer and the index is 1');
+     }
+      else if (color===funColor[2])
+      {
+         alert('you got a correct answer and the index is 2');
+      }
+      else
+     {
+       alert('you got a wrong answer');
      }
