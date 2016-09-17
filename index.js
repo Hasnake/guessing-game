@@ -63,3 +63,6 @@
    }else{
      alert('you got a correct answer and the index is' + '' + funColor.indexOf(questionSix));
    }
+   var questionSeven = prompt('How many questions you got?');
+   questionSeven = questionSeven.toLowerCase();
+   console.log('');
