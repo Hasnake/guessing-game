@@ -1,7 +1,18 @@
    var userName = prompt('What\'s your name?');
-   alert('Welcome to my site ' + userName);
-
-   var questionOne = prompt('Was I born in Washington?');
+   var today = new Date();
+   var curHr = today.getHours();
+   if (curHr < 12) {
+     alert('Good morning' + '  ' + userName + ',' + 'Welcome to my site!');
+   }
+   else if (curHr < 18)
+   {
+     alert('Good afternoon' + '  ' + userName + ',' + 'Welcome to my site!');
+   }
+else
+{
+     alert('Good evening' + '  ' + userName + ',' + 'Welcome to my site!');
+   }
+   var questionOne = prompt('Was I born in the USA?');
    questionOne = questionOne.toLowerCase();
 
    if (questionOne === 'no' || questionOne === 'n')
@@ -21,7 +32,7 @@
    if (questionTwo === 'yes' || questionTwo === 'y') {
      alert('Great, please go through my profile.' + userName );
    } else if (questionTwo === 'no' || questionTwo === 'n'){
-     alert('No worries and I wish if you know me better.');
+     alert('I wish if you know me better but no worries.Keep on guessing the other questions');
    }
      else {
      alert('invalid input');
@@ -31,39 +42,40 @@
 
    if (questionThree === 'yes' || questionThree === 'y')
        {
-     alert('Thank you very much.Yo are so awesome too!');
+     alert('Thank you very much.You are so awesome too!');
    }
    else if (questionThree === 'no' || questionThree === 'n')
      {
-     alert('oh boy better to like that!.');}
+     alert('I wish if you like my photo.');}
      else {
      alert('invalid input');
    }
-   var questionFour = prompt('Do you want to perform some music?');
+   var questionFour = prompt('do I have backend technology experience?');
    questionFour = questionFour.toLowerCase();
 
    if (questionFour === 'yes' || questionFour === 'y')
      {
-     alert('come visit me.');
+     alert('correct,come visit me and we can write some querries together .');
    }
    else if (questionFour === 'no' || questionFour === 'n')
      {
-     alert('Don\'t  ask such question ');
+     alert('you don\'t  know me. I was SQL dev before a couple of years ago ');
    }
      else {
      alert('invalid input');
    }
-   var temprature = prompt('what is the temprature outside in degree Fahraniet');
-   var season = prompt('What is the season? Is that winter,Fall,spring,summer');
-   if (temprature <= 60 && season === 'winter')
+   var questionFive = prompt('Guess Who is my web fundamental instructor');
+   questionFive = questionFive.toLowerCase();
+   if (questionFive = 'Scott' || 'Dan')
        {
-     alert('wear a jacket');
+     alert('Yes you got the correct answer');
    }
    else
      {
-     alert('you can take off your jacket');
+     alert('No,you better think another instructor');
    }
-   var questionSix = prompt('guess the fundamental color ');
+   var questionSix = prompt('guess my favourite background color');
+   questionSix = questionSix.toLowerCase();
    var funColor = ['red','green','blue'];
    if (funColor.indexOf(questionSix) === -1)
      {
