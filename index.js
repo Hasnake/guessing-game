@@ -65,4 +65,11 @@
    }
    var questionSeven = prompt('How many questions you got?');
    questionSeven = questionSeven.toLowerCase();
+   var numberOfQuestions =7
+   for (var i = 0; i < numberOfQuestions; i++) {
+  var answer = prompt(questions[i]);
+  if (answer === correctAns[i]) {
+    alert(response[i][0] + userName + response[i][1]);
+  } else{
    console.log('');
+ }
