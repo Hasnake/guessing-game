@@ -51,28 +51,25 @@ else
      alert('invalid input');
    }
    var questionFour = prompt('do I have backend technology experience?');
-   questionFour = questionFour.toLowerCase();
+   questionFour = questionFour.toUpperCase();
 
-   if (questionFour === 'yes' || questionFour === 'y')
+   if (questionFour === 'Yes' || questionFour === 'Y')
      {
-     alert('correct,come visit me and we can write some querries together .');
+     alert('correct,come visit me and we can write some querries together.');
    }
-   else if (questionFour === 'no' || questionFour === 'n')
+   else if (questionFour === 'No' || questionFour === 'N')
      {
      alert('you don\'t  know me. I was SQL dev before a couple of years ago ');
    }
      else {
      alert('invalid input');
    }
-   var questionFive = prompt('Guess Who is my web fundamental instructor');
-   questionFive = questionFive.toLowerCase();
-   if (questionFive = 'Scott' || 'Dan')
+   var questionFive = prompt('Did your name length acceptable in my culture?what is your name?');
+   if (questionFive.length <= 2 || questionFive.length >= 7)
        {
-     alert('Yes you got the correct answer');
-   }
-   else
-     {
-     alert('No,you better think another instructor');
+     alert('No,too small or too long names are not recommended in our culture');
+   }else {
+     alert('yes,your name in the range');
    }
    var questionSix = prompt('guess my favourite background color');
    questionSix = questionSix.toLowerCase();
