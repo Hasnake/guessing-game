@@ -62,9 +62,11 @@ if (funColor.indexOf(questionSix) === -1){
 }else{
   alert('you got a correct answer and the index is' + '' + funColor.indexOf(questionSix));
 }
-  //  var questionSeven = prompt('How many questions you got?')
-  // for (var i = 0; i < numberOfQuestions.length; i++) {
-  // var answer = prompt(questions[i]);
-  // if (answer === correctAns[i]) {
-  //   alert(response[i][0] + userName + response[i][1]);
-  // } else..
+var num = 23;
+var trial = 4;
+for(var i = 0;i < trial;i++){
+  var answerSeven = parseInt(prompt('No between 20 and 25'));
+  if (answerSeven === num){
+    alert('got answer');
+    break;}
+}
