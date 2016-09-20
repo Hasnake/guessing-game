@@ -41,7 +41,7 @@ if (questionThree === 'yes' || questionThree === 'y'){
 var questionFour = prompt('do I have backend technology experience?');
 questionFour = questionFour.toUpperCase();
 
-if (questionFour === 'Yes' || questionFour === 'Y'){
+if (questionFour === 'YES' || questionFour === 'Y'){
   alert('correct,come visit me and we can write some querries together.');
 }else if (questionFour === 'No' || questionFour === 'N'){
   alert('you don\'t  know me. I was SQL dev before a couple of years ago ');
@@ -65,7 +65,7 @@ if (funColor.indexOf(questionSix) === -1){
 var num = 23;
 var trial = 4;
 for(var i = 0;i < trial;i++){
-  var answerSeven = parseInt(prompt('No between 20 and 25'));
+  var answerSeven = parseInt(prompt('Guess a Number between 20 and 25'));
   if (answerSeven === num){
     alert('got answer');
     break;}
