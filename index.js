@@ -10,8 +10,8 @@ if (curHr < 12) {
 }else{
   alert('Good evening' + '  ' + userName + ',' + 'Welcome to my site!');
 }
-var questionOne = prompt('Was I born in the USA?');
-questionOne = questionOne.toLowerCase();
+var questionOne = prompt('Was I born in the USA?').toLowerCase;
+//questionOne = questionOne.toLowerCase(); repeat for other questions
 if (questionOne === 'no' || questionOne === 'n'){
   alert('Correct, I was born in Ethiopia!');
 }else if (questionOne === 'yes' || questionOne === 'y'){
@@ -70,3 +70,4 @@ for(var i = 0;i < trial;i++){
     alert('got answer');
     break;}
 }
+//use for loop
