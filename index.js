@@ -10,8 +10,8 @@ if (curHr < 12) {
 }else{
   alert('Good evening' + '  ' + userName + ',' + 'Welcome to my site!');
 }
-var questionOne = prompt('Was I born in the USA?');
-questionOne = questionOne.toLowerCase();
+var questionOne = prompt('Was I born in the USA?').toLowerCase();
+//questionOne = questionOne.toLowerCase();
 if (questionOne === 'no' || questionOne === 'n'){
   alert('Correct, I was born in Ethiopia!');
 }else if (questionOne === 'yes' || questionOne === 'y'){
@@ -19,8 +19,8 @@ if (questionOne === 'no' || questionOne === 'n'){
 }else {
   alert('invalid input');
 }
-var questionTwo = prompt('Do you want to know me better');
-questionTwo = questionTwo.toLowerCase();
+var questionTwo = prompt('Do you want to know me better').toLowerCase();
+//questionTwo = questionTwo.toLowerCase();
 if (questionTwo === 'yes' || questionTwo === 'y') {
   alert('Great, please go through my profile.' + userName );
 } else if (questionTwo === 'no' || questionTwo === 'n'){
@@ -28,8 +28,8 @@ if (questionTwo === 'yes' || questionTwo === 'y') {
 }else {
   alert('invalid input');
 }
-var questionThree = prompt('Do you like my photo?');
-questionThree = questionThree.toLowerCase();
+var questionThree = prompt('Do you like my photo?').toLowerCase();
+//questionThree = questionThree.toLowerCase();
 
 if (questionThree === 'yes' || questionThree === 'y'){
   alert('Thank you very much.You are so awesome too!');
@@ -38,8 +38,8 @@ if (questionThree === 'yes' || questionThree === 'y'){
 }else {
   alert('invalid input');
 }
-var questionFour = prompt('do I have backend technology experience?');
-questionFour = questionFour.toUpperCase();
+var questionFour = prompt('do I have backend technology experience?').toUpperCase();
+//questionFour = questionFour.toUpperCase();
 
 if (questionFour === 'YES' || questionFour === 'Y'){
   alert('correct,come visit me and we can write some querries together.');
@@ -54,8 +54,8 @@ if (questionFive.length <= 2 || questionFive.length >= 7){
 }else {
   alert('yes,your name in the range');
 }
-var questionSix = prompt('guess my favourite background color');
-questionSix = questionSix.toLowerCase();
+var questionSix = prompt('guess my favourite background color').toLowerCase();
+//questionSix = questionSix.toLowerCase();
 var funColor = ['red','green','blue'];
 if (funColor.indexOf(questionSix) === -1){
   alert('you got a wrong answer');
@@ -69,4 +69,18 @@ for(var i = 0;i < trial;i++){
   if (answerSeven === num){
     alert('got answer');
     break;}
+}
+var answerEight = parseInt(prompt('Calculate the size of a volume and area for width=3,height=5 and depth=6,Put your answer as area,volume'));
+function getSize(width,height,depth){
+  var area = width * height;
+  var volume = width * height * depth;
+  var sizes = [area,volume];
+  return sizes;
+}
+getSize(3,5,6);
+if (answerEight === 15,90) {
+  alert('you got the answer');
+}
+else {
+  alert('you got the wrong answer');
 }
