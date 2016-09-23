@@ -1,16 +1,11 @@
 'use strict';
-//greeting
-var userName = prompt('What\'s your name?');
-var today = new Date();
-var curHr = today.getHours();
-if (curHr < 12) {
-  alert('Good morning' + '  ' + userName + ',' + 'Welcome to my site!');
-}else if (curHr < 18)
-   {
-  alert('Good afternoon' + '  ' + userName + ',' + 'Welcome to my site!');
-}else{
-  alert('Good evening' + '  ' + userName + ',' + 'Welcome to my site!');
+// FUNCTION GREETING.
+function myFunction(){
+  return ( 'welcome to my site,' + names);
 }
+var names = prompt('what is your name?');
+alert(myFunction());
+
 //Four Yes Or NO questions
 var questions = ['Was I born in Ethiopia?','Do I Speak Amharic?','am I a software tester?','do I have a backend technology experience?'];
 for (i = 0;i < questions.length;i++){
@@ -66,20 +61,23 @@ else {
 
 
 
+// function myFunction(userName){
+//   return ( 'welcome to my site,' + userName);
+// }
+// var varName = prompt('who are you?');
+// alert(myFunction(varName));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var userName = prompt('What\'s your name?');
+// var today = new Date();
+// var curHr = today.getHours();
+// if (curHr < 12) {
+//   alert('Good morning' + '  ' + userName + ',' + 'Welcome to my site!');
+// }else if (curHr < 18)
+//    {
+//   alert('Good afternoon' + '  ' + userName + ',' + 'Welcome to my site!');
+// }else{
+//   alert('Good evening' + '  ' + userName + ',' + 'Welcome to my site!');
+// }
 //PREVIOUS CODE For REFERENCE
 // var questionOne = prompt('Was I born in the USA?').toLowerCase();
 // //questionOne = questionOne.toLowerCase();
