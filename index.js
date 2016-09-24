@@ -5,16 +5,38 @@ function greeting(){
 }
 var names = prompt('what is your name?');
 alert(greeting());
-//YES OR NO
-var questions = ['Was I born in Ethiopia?','Do I Speak Amharic?','am I a software tester?','do I have a backend technology experience?'];
-for (i = 0;i < questions.length;i++){
-  var questionsAnswer = prompt(questions[i]);
-  questionsAnswer = questionsAnswer.toLowerCase();
-  if (questionsAnswer === 'yes' || questionsAnswer === 'y'){
-    alert('correct');
-  }else
-     alert('Incorrect');
+//guessingYesOrNoQuestions
+var questions = ['Was I born in Ethiopia?','Do I Speak French?','am I a software tester?','do I have a backend technology experience?'];
+var totalNumberOfQuestions = questions.length;
+var correctAnswerForQuestions = ['yes' || 'y','no' || 'n','yes' || 'y','yes' || 'y'];
+var alertsToCorrectAnswers = ['yes you are correct,I was born in Ethiopia','yes I don\'t speak French','yes I am QA tester','yes I got some SQL know how'];
+var alertsToIncorrrectAnswers = ['incorrect','No,but i have some limited communication skill on spanish','ofcourse I am a tester','wrong,I have the knoweledge'];
+var storeCorrectAnswers = [];
+var storeIncorrectResponse = [];
+var i = 0;
+function guessingYesOrNoQuestions(){
+  if (i < 4) {
+    var userResponse = prompt(questions[i]).toLowerCase();
+    if (userResponse === correctAnswerForQuestions[i]) {
+      alert(alertsToCorrectAnswers[i]);
+      storeCorrectAnswers.push(userResponse);
+      i ++;
+      guessingYesOrNoQuestions();
+    }
+    else if (userResponse !== correctAnswerForQuestions[i]) {
+      alert(alertsToIncorrrectAnswers[i]);
+      storeIncorrectResponse.push(userResponse);
+      i++;
+      guessingYesOrNoQuestions();
+    }else {
+      alert('invalid input');
+      guessingYesOrNoQuestions();
+    }
+  }
 }
+guessingYesOrNoQuestions();
+alert('your results for the guessing game is' + ' ' + storeCorrectAnswers.length + ' ' + 'out of' + totalNumberOfQuestions );
+
    //array length
 var questionFive = prompt('Did your name length acceptable in my culture?what is your name?');
 if (questionFive.length <= 2 || questionFive.length >= 7){
@@ -34,9 +56,22 @@ if (funColor.indexOf(questionSix) === -1){
 //guessing a number
 var num = 23;
 var trial = 4;
-for(var i = 0;i < trial;i++){
+for(i = 0;i < trial;i++){
   var questionSeven = parseInt(prompt('Guess a Number between 20 and 25'));
   if (questionSeven === num){
-    alert('got answer');
+    alert('you got the answer');
     break;}
+}
+
+//function on volume calculation
+var questionEight = parseInt(prompt('Calculate the size of a volume for width=3,height=5 and depth=6'));
+function getSize(width,height,depth){
+  return volume = width * height * depth;
+}
+getSize(3,5,6);
+if (questionEight === 90) {
+  alert('you got the answer');
+}
+else {
+  alert('you got the wrong answer');
 }
