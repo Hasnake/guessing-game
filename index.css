@@ -1,8 +1,17 @@
 body
 {
-  background-color:grey;
-
+  animation: pulse 1.5s infinite;
 }
+
+@keyframes pulse {
+  0% {
+    background-color: #00aabb;
+  }
+  100% {
+    background-color: 00abcd;
+  }
+}
+
 h1{
         text-align: center;
         background-color: purple;
@@ -13,6 +22,15 @@ h1{
         border-width: 3px;
         font-family:fantasy;
         font-style: oblique;
+      }
+li
+    {
+        background-color:  #66ff66;
+    }
+
+    .general
+    {
+      background-color:  #66ff66;
     }
     p
         {
@@ -20,6 +38,7 @@ h1{
           font-family:monospace;
           font-style:italic;
           font-size: 16px;
+          background-color:#99ccff;
         }
 img
 {
@@ -28,6 +47,7 @@ img
   margin: auto;
   width: 25%;
   background-color: blue;
+  padding: 5px;
 }
 li
 {
