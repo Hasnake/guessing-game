@@ -1,8 +1,17 @@
 body
 {
-  background-color:grey;
-
+  animation: pulse 1.5s infinite;
 }
+
+@keyframes pulse {
+  0% {
+    background-color: #00aabb;
+  }
+  100% {
+    background-color: 00abcd;
+  }
+}
+
 h1{
         text-align: center;
         background-color: purple;
@@ -18,7 +27,7 @@ li
     {
         background-color:  #66ff66;
     }
-    
+
     .general
     {
       background-color:  #66ff66;
