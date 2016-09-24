@@ -66,10 +66,11 @@ for(i = 0;i < trial;i++){
 //function on volume calculation
 var questionEight = parseInt(prompt('Calculate the size of a volume for width=3,height=5 and depth=6'));
 function getSize(width,height,depth){
-  return volume = width * height * depth;
+  volume = width * height * depth;
+  return volume;
 }
 getSize(3,5,6);
-if (questionEight === 90) {
+if (questionEight === volume) {
   alert('you got the answer');
 }
 else {
